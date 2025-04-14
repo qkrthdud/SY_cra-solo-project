@@ -6,7 +6,7 @@ const Hd = ({datainfo, id, cls}) => {
             <div className='d-flex justify-content-between align-items-center'>
                 <h1>
                     <a href="/">
-                        SOYOUNG:
+                        <span className='d-none d-lg-inline'>SOYOUNG:</span>
                     </a>
                 </h1>
                 <nav>
