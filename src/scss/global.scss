@@ -27,4 +27,111 @@ a{
     }
   }
 
+  #footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
   
+  #footer img {
+    margin-top: 10px;
+    max-width: 100%; /* 이미지 크기 제한 */
+  }
+/* global.scss */
+
+/* 기본적인 passpage 스타일 */
+.passpage {
+  position: relative;
+}
+
+.passpage-header-image {
+  width: 100%;
+  display: block;
+}
+
+.passpage-event01-image {
+  width: 100%;
+  display: block;
+}
+
+.passpage-event02 {
+  position: relative;
+}
+
+.passpage-event02-bg {
+  width: 100%;
+  display: block;
+}
+
+/* 팝업 열기 버튼 */
+.popup-open-btn {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* 팝업이 열린 뒤 배경 흐림 효과 */
+.popup-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);  // 반투명 검정 배경
+  backdrop-filter: blur(5px);  // 배경 흐림 효과
+  z-index: -1;  // 팝업 이미지 아래에 위치
+}
+/* 팝업 스타일 */
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.popup-image {
+  width: 100%;
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 4;
+}
+
+/* 보상 이미지 */
+.reward-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 탭 이미지 (클릭 가능) */
+.reward-tab-left, .reward-tab-right {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 10%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.reward-tab-left {
+  left: 0;
+}
+
+.reward-tab-right {
+  left: 50%;
+}
